@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge gui</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-item">
+            <h2 class="title">MineBridge</h2>
+            <div class="data">
+                <div class="data-field" id="minecraftConnection">Не подключено</div>
+                <div class="data-field" id="minecraftTimeConnection"></div>
+                <div class="data-field" id="minecraftUPS"></div>
+                <div class="data-field" id="minecraftEntitiesCount"></div>
+
+                <div class="data-field">
+                    <div id="minecraftEntities">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-item logger">
+            <h1 class="title">Logger</h2>
+
+            <ul id="log" scrolling>
+            </ul>
+        </div>
+
+        <div class="wrapper-item">
+            <h2 class="title">GmodBridge</h2>
+            <div class="data">
+                <div class="data-field" id="gmodConnection">Не подключено</div>
+                <div class="data-field" id="gmodTimeConnection"></div>
+                <div class="data-field" id="gmodUPS"></div>
+                <div class="data-field" id="gmodEntitiesCount"></div>
+
+                <div class="data-field">
+                    <div id="gmodEntities">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
