@@ -29,9 +29,6 @@ public class BridgeController {
 
     public static ArrayList<Block> changedBlocks = new ArrayList<>();
 
-    protected static Particle.DustOptions spawnChunkEffectRed = new Particle.DustOptions(Color.RED, 10f);
-    protected static Particle.DustOptions spawnChunkEffectBlue = new Particle.DustOptions(Color.BLUE, 10f);
-
     public static void clear() {
         token = null;
         maxTPS = 0;
