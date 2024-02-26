@@ -1,0 +1,8 @@
+name: thesecretplugin
+version: '${project.version}'
+main: net.tcz.mc.gmodconnection.Gmodconnection
+api-version: 1.18
+prefix: thesecretplugin
+authors: [ TheCreeeZ ]
+commands:
+  bridge: {}

@@ -1,0 +1,32 @@
+[16:05:18][Room-test]: Initialized room with settings:
+[16:05:18][Room-test]: gmodUnitsPerBlock: 64
+[16:05:18][Room-test]: maxTPS: 20
+[16:05:18][Room-test]: allowedGeneratingMap: true
+[16:05:18][Room-test]: forcedGeneratingMap: true
+[16:05:18][Room-test]: To connect to the room type "/bridge start test" on your client.
+[16:05:32][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[16:05:32][Room-test]: gmod side connected to the room.
+[16:05:52][Room-test]: GmodSide disconnected: Timed out.
+[16:05:55][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[16:05:55][Room-test]: gmod side connected to the room.
+[16:06:13][Room-test]: GmodSide disconnected: Timed out.

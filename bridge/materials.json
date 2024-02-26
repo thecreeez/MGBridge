@@ -1,0 +1,12 @@
+{
+  "default": "minecraft:smooth_stone",
+  "concrete": "minecraft:white_concrete",
+  "grass": "minecraft:grass_block",
+  "brick": "minecraft:bricks",
+  "roof": "minecraft:polished_deepslate",
+  "plaster": "minecraft:cyan_terracotta",
+  "building": "minecraft:white_terracotta",
+  "wood": "minecraft:oak_planks",
+  "cliff": "minecraft:cobblestone",
+  "stone": "minecraft:stone"
+}

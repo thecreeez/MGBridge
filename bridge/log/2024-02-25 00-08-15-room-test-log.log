@@ -1,0 +1,93 @@
+[00:08:15][Room-test]: Initialized room with settings:
+[00:08:15][Room-test]: gmodUnitsPerBlock: 64
+[00:08:15][Room-test]: maxTPS: 1
+[00:08:15][Room-test]: allowedGeneratingMap: true
+[00:08:15][Room-test]: forcedGeneratingMap: true
+[00:08:15][Room-test]: To connect to the room type "/bridge start test" on your client.
+[00:15:14][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:15:14][Room-test]: gmod side connected to the room.
+[00:15:25][Room-test]: Added chunk: [4%] (6 blocks)
+[00:15:29][Room-test]: Added chunk: [6%] (17 blocks)
+[00:15:30][Room-test]: Added chunk: [6%] (33 blocks)
+[00:15:31][Room-test]: Added chunk: [7%] (89 blocks)
+[00:15:32][Room-test]: gmod side disconnected from room.
+[00:16:22][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:16:22][Room-test]: gmod side connected to the room.
+[00:16:33][Room-test]: Added chunk: [4%] (6 blocks)
+[00:16:34][Room-test]: gmod side disconnected from room.
+[00:17:40][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:17:40][Room-test]: gmod side connected to the room.
+[00:17:50][Room-test]: Added chunk: [4%] (6 blocks)
+[00:17:54][Room-test]: Added chunk: [6%] (17 blocks)
+[00:17:55][Room-test]: Added chunk: [6%] (33 blocks)
+[00:17:56][Room-test]: Added chunk: [7%] (89 blocks)
+[00:18:01][Room-test]: gmod side disconnected from room.
+[00:18:16][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:18:16][Room-test]: gmod side connected to the room.
+[00:18:19][Room-test]: gmod side disconnected from room.
+[00:18:22][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:18:22][Room-test]: gmod side connected to the room.
+[00:18:24][Room-test]: gmod side disconnected from room.
+[00:18:26][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[00:18:26][Room-test]: gmod side connected to the room.
+[00:18:28][Room-test]: gmod side disconnected from room.

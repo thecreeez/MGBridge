@@ -1,0 +1,19 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/paper"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1001}, "model": "item/physgun"},
+        {"predicate": {"custom_model_data":1002}, "model": "item/pistol"},
+        {"predicate": {"custom_model_data":1003}, "model": "item/gmod_crossbow"},
+        {"predicate": {"custom_model_data":1004}, "model": "item/gmod_camera"},
+        {"predicate": {"custom_model_data":1005}, "model": "item/grenade"},
+		{"predicate": {"custom_model_data":1006}, "model": "item/rpg"},
+        {"predicate": {"custom_model_data":1007}, "model": "item/crowbar"},
+		{"predicate": {"custom_model_data":1008}, "model": "item/tool_gun"},
+        {"predicate": {"custom_model_data":1009}, "model": "item/revolver"},
+        {"predicate": {"custom_model_data":1010}, "model": "item/gravigun"},
+        {"predicate": {"custom_model_data":1011}, "model": "item/error"}
+	]
+}

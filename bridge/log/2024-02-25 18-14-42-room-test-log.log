@@ -1,0 +1,564 @@
+[18:14:42][Room-test]: Initialized room with settings:
+[18:14:42][Room-test]: gmodUnitsPerBlock: 64
+[18:14:42][Room-test]: maxTPS: 1
+[18:14:42][Room-test]: allowedGeneratingMap: true
+[18:14:42][Room-test]: forcedGeneratingMap: true
+[18:14:42][Room-test]: To connect to the room type "/bridge start test" on your client.
+[18:15:47][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[18:15:47][Room-test]: gmod side connected to the room.
+[18:16:05][Room-test]: Added chunk: [4%] (6 blocks)
+[18:16:08][Room-test]: minecraft side connected to the room.
+[18:16:09][Room-test]: New MinecraftSide entity:  {
+  "isSitting": 0,
+  "health": 20,
+  "type": "Player",
+  "uuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "yaw": 93.34527,
+  "isAlive": true,
+  "bFlashlight": false,
+  "name": "TheCreeeZ",
+  "x": 1085.7932254191026,
+  "y": -113.67247441927833,
+  "z": -910.9779249608355,
+  "pitch": 37.9501,
+  "hand": "minecraft:air"
+}
+[18:16:12][Room-test]: Added chunk: [6%] (17 blocks)
+[18:16:13][Room-test]: Added chunk: [6%] (33 blocks)
+[18:16:14][Room-test]: Added chunk: [7%] (89 blocks)
+[18:16:23][Room-test]: Added chunk: [9%] (99 blocks)
+[18:16:31][Room-test]: Added chunk: [11%] (12 blocks)
+[18:16:33][Room-test]: Added chunk: [11%] (99 blocks)
+[18:16:40][Room-test]: Added chunk: [13%] (56 blocks)
+[18:16:41][Room-test]: Added chunk: [13%] (33 blocks)
+[18:16:42][Room-test]: Added chunk: [13%] (62 blocks)
+[18:17:09][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "5c486226-5046-4056-8a3d-6aaf56241b05"
+}
+[18:17:10][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "cdc022e7-8150-4e98-8555-8a3f92858f48"
+}
+[18:17:10][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "ebd05335-ac5b-4d03-9fd5-c7c94a4d65f3"
+}
+[18:17:10][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "12c6dce3-6c51-4802-b355-45106e3488ec"
+}
+[18:17:11][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "07d5ae94-6ad0-424f-9c6a-3fd10bb0788c"
+}
+[18:17:11][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "eb3aeebe-7ee7-457d-81e6-11b833b34aaf"
+}
+[18:17:12][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "453e2d9f-d38d-47d8-85bb-832bd7445943"
+}
+[18:17:12][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "08e43f1b-3fc1-4143-939c-24709dc78cb0"
+}
+[18:17:13][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "31a1a691-8f24-4d94-be5f-b24fb883285c"
+}
+[18:17:13][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "e4097c21-3c7b-40c3-a797-3d105e6b6973"
+}
+[18:17:13][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "7e34afe7-ecf1-49e5-87c7-e4c81519d19d"
+}
+[18:17:24][Room-test]: Added chunk: [23%] (228 blocks)
+[18:17:25][Room-test]: Added chunk: [23%] (832 blocks)
+[18:17:26][Room-test]: Added chunk: [24%] (497 blocks)
+[18:17:27][Room-test]: Added chunk: [24%] (846 blocks)
+[18:17:28][Room-test]: Added chunk: [24%] (702 blocks)
+[18:17:29][Room-test]: Added chunk: [24%] (549 blocks)
+[18:17:34][Room-test]: Added chunk: [25%] (941 blocks)
+[18:17:35][Room-test]: Added chunk: [26%] (3253 blocks)
+[18:17:36][Room-test]: Added chunk: [26%] (2030 blocks)
+[18:17:37][Room-test]: Added chunk: [26%] (2598 blocks)
+[18:17:38][Room-test]: Added chunk: [26%] (2319 blocks)
+[18:17:39][Room-test]: Added chunk: [27%] (2876 blocks)
+[18:17:43][Room-test]: Added chunk: [28%] (2788 blocks)
+[18:17:44][Room-test]: Added chunk: [28%] (5333 blocks)
+[18:17:45][Room-test]: Added chunk: [28%] (2326 blocks)
+[18:17:46][Room-test]: Added chunk: [28%] (2089 blocks)
+[18:17:47][Room-test]: Added chunk: [29%] (633 blocks)
+[18:17:48][Room-test]: Added chunk: [29%] (1183 blocks)
+[18:17:52][Room-test]: Added chunk: [30%] (1453 blocks)
+[18:17:54][Room-test]: Added chunk: [30%] (2840 blocks)
+[18:17:55][Room-test]: Added chunk: [30%] (1212 blocks)
+[18:17:56][Room-test]: Added chunk: [31%] (2270 blocks)
+[18:17:57][Room-test]: Added chunk: [31%] (848 blocks)
+[18:17:58][Room-test]: Added chunk: [31%] (1597 blocks)
+[18:18:02][Room-test]: Added chunk: [32%] (627 blocks)
+[18:18:03][Room-test]: Added chunk: [32%] (2357 blocks)
+[18:18:04][Room-test]: Added chunk: [33%] (1800 blocks)
+[18:18:05][Room-test]: Added chunk: [33%] (2059 blocks)
+[18:18:06][Room-test]: Added chunk: [33%] (1780 blocks)
+[18:18:07][Room-test]: Added chunk: [33%] (1662 blocks)
+[18:18:18][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "876509df-5a5a-4019-818a-c3f6ad52a122"
+}
+[18:18:18][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "a985ea9e-bb18-4468-ae95-bfe78ecb63f7"
+}
+[18:18:19][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "68a34c08-3979-46f3-9c09-2b47ea5b8969"
+}
+[18:18:19][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "5ccc76e8-560b-417c-98e8-ca758597bd43"
+}
+[18:18:19][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "5303f16b-7170-4599-8a9e-c002e9439013"
+}
+[18:18:20][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "8ce8f911-c2b9-43ea-83fb-a8bb3d69c9ba"
+}
+[18:18:20][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "d31715be-1d39-469b-985b-eda28931c507"
+}
+[18:18:21][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "47b8b6da-69a2-4ba5-bc06-0254dcc8b80d"
+}
+[18:18:21][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "3f477142-6ea6-41ef-8b74-6f86f615c28a"
+}
+[18:18:21][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "1c13abca-2e4c-427f-8374-02360c2e41b4"
+}
+[18:18:22][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "0e98ac14-26ed-4aff-bbea-5574ee131233"
+}
+[18:18:22][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "1aa08e61-7edc-46c9-b8ee-51e11ee4edc8"
+}
+[18:18:23][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "b92f9edf-68e6-43a5-9b7d-b56565a11162"
+}
+[18:18:23][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "20ee5a3a-7e43-443a-8750-dd0997c51f83"
+}
+[18:18:24][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "4c0297a3-e7af-4e80-bfb3-3a4ae4993923"
+}
+[18:18:24][Room-test]: New GmodSide event:  {
+  "dmgtype": 128,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "STEAM_0:0:95049876",
+  "targetUuid": "1f77ddee-7ee7-42a4-bc40-05197e74cf85",
+  "uuid": "870985a4-8a40-4501-8524-e75fb624702c"
+}
+[18:18:30][Room-test]: New GmodSide event:  {
+  "dmgtype": 32,
+  "value": 10,
+  "type": "Damage",
+  "attackerUuid": "0",
+  "targetUuid": "STEAM_0:0:95049876",
+  "uuid": "5fa2d499-dfe1-4207-a69a-d4579a6c0d21"
+}
+[18:18:31][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 1886,
+  "uuid": "58fdb412-28f1-41a5-89f1-3dcaebede428"
+}
+[18:18:31][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "d5900c8a-bf70-4516-a598-06568921ad74"
+}
+[18:18:42][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 90,
+  "uuid": "17544c9d-6dc7-45a9-8e72-618d5d56e25e"
+}
+[18:18:42][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "916b0a10-7bf0-498c-b8b8-3f23c624a6da"
+}
+[18:18:49][Room-test]: Added chunk: [43%] (363 blocks)
+[18:18:50][Room-test]: Added chunk: [43%] (1089 blocks)
+[18:18:51][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 65,
+  "uuid": "450b834e-7321-4215-ae01-aea0156138c2"
+}
+[18:18:51][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "abce7f16-0f30-4c34-8cc2-17405e85c6c3"
+}
+[18:18:51][Room-test]: Added chunk: [44%] (1089 blocks)
+[18:18:52][Room-test]: Added chunk: [44%] (1056 blocks)
+[18:18:53][Room-test]: Added chunk: [44%] (1089 blocks)
+[18:18:54][Room-test]: Added chunk: [44%] (726 blocks)
+[18:19:01][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 11,
+  "uuid": "bcbd8806-acdd-43ca-a4ea-92cf32dd3ed8"
+}
+[18:19:03][Room-test]: Added chunk: [46%] (941 blocks)
+[18:19:04][Room-test]: Added chunk: [47%] (1222 blocks)
+[18:19:08][Room-test]: Added chunk: [48%] (1118 blocks)
+[18:19:09][Room-test]: Added chunk: [48%] (2842 blocks)
+[18:19:14][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 157,
+  "uuid": "12370cf3-9944-4cf1-8768-1c5a8e17a1eb"
+}
+[18:19:14][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "413c07f3-579d-4e4f-a084-929f55ae7f73"
+}
+[18:19:19][Room-test]: Added chunk: [50%] (181 blocks)
+[18:19:20][Room-test]: Added chunk: [50%] (14 blocks)
+[18:19:22][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 55,
+  "uuid": "d99dc438-e438-496c-99f9-e809fd6ddf03"
+}
+[18:19:22][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "9bbc685d-65b8-4c1d-86df-ad51a8d9f3c1"
+}
+[18:19:23][Room-test]: Added chunk: [51%] (924 blocks)
+[18:19:27][Room-test]: Added chunk: [52%] (330 blocks)
+[18:19:28][Room-test]: Added chunk: [52%] (1575 blocks)
+[18:19:29][Room-test]: Added chunk: [53%] (1128 blocks)
+[18:19:30][Room-test]: Added chunk: [53%] (1089 blocks)
+[18:19:31][Room-test]: Added chunk: [53%] (1089 blocks)
+[18:19:32][Room-test]: Added chunk: [53%] (1188 blocks)
+[18:19:36][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 117,
+  "uuid": "d0fb2eb0-96bf-42dc-846e-eaa16db76cc1"
+}
+[18:19:36][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "2c2f91f0-f62f-462f-b81c-7be06c3a91aa"
+}
+[18:19:47][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 38,
+  "uuid": "c705dd68-69c1-4798-9186-71cda20c0b0b"
+}
+[18:19:47][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "7cfd8909-894c-4f6b-9b9c-4d5f22758b2e"
+}
+[18:19:51][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 2,
+  "uuid": "b345af15-84ed-44ba-8d9c-51d984914b0b"
+}
+[18:20:06][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 5.904000282287598,
+  "uuid": "69a397a4-8757-4e20-9cbd-ba9026f0387c"
+}
+[18:20:09][Room-test]: New MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -2517.123408898354,
+  "y": 485.0094911365047,
+  "z": -2798.0155633478103,
+  "pitch": 17.712706,
+  "type": "Projectile",
+  "uuid": "5553aae4-69b5-40dc-9a47-5d65d9426d9d",
+  "class": "Arrow",
+  "yaw": 43.299828,
+  "isSitting": 0
+}
+[18:20:12][Room-test]: New MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -2604.5641556275323,
+  "y": 238.26782728203153,
+  "z": -3368.391636298249,
+  "pitch": 16.523117,
+  "type": "Projectile",
+  "uuid": "828753f4-1c54-4f70-acda-41361d31e1ac",
+  "class": "Arrow",
+  "yaw": 65.48829,
+  "isSitting": 0
+}
+[18:20:14][Room-test]: New MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -2028.5341842287517,
+  "y": 512.449289937387,
+  "z": -3061.8222456901235,
+  "pitch": 18.900167,
+  "type": "Projectile",
+  "uuid": "48d1245a-ad3f-49de-800b-ad2801b79489",
+  "class": "Arrow",
+  "yaw": 63.98114,
+  "isSitting": 0
+}
+[18:20:14][Room-test]: Added chunk: [63%] (363 blocks)
+[18:20:15][Room-test]: Removed MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -2028.5341842287517,
+  "y": 512.449289937387,
+  "z": -3061.8222456901235,
+  "pitch": 18.900167,
+  "type": "Projectile",
+  "uuid": "48d1245a-ad3f-49de-800b-ad2801b79489",
+  "class": "Arrow",
+  "yaw": 63.98114,
+  "isSitting": 0
+}
+[18:20:15][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 8.855999946594238,
+  "uuid": "6a23b90e-959c-4a60-a232-e9ef6658d9a4"
+}
+[18:20:15][Room-test]: Added chunk: [63%] (1089 blocks)
+[18:20:16][Room-test]: Added chunk: [64%] (1089 blocks)
+[18:20:17][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 4.920000076293945,
+  "uuid": "757b6c6c-23bb-4d93-ba46-6ae6deb6ad40"
+}
+[18:20:17][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "a36b17a1-0cb2-444b-8390-79f07f0d3aa1"
+}
+[18:20:17][Room-test]: Added chunk: [64%] (1056 blocks)
+[18:20:18][Room-test]: Added chunk: [64%] (1089 blocks)
+[18:20:19][Room-test]: Added chunk: [64%] (726 blocks)
+[18:20:25][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 51,
+  "uuid": "b6dbed0f-82bf-4a98-8994-139ca644726b"
+}
+[18:20:25][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "a6e5cc47-bce0-42f9-8d45-d3be6f0dd109"
+}
+[18:20:44][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 194,
+  "uuid": "0d0ac21b-9e38-4edd-a2cc-7c6efb334bc1"
+}
+[18:20:44][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "ab811d28-f852-47cd-acf5-36894ffb4e87"
+}
+[18:20:48][Room-test]: Added chunk: [71%] (924 blocks)
+[18:20:52][Room-test]: Added chunk: [72%] (330 blocks)
+[18:20:52][Room-test]: New MinecraftSide event:  {
+  "type": "Damage",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": 51,
+  "uuid": "b4849546-abfc-4abb-8134-46aee7fde93a"
+}
+[18:20:52][Room-test]: New GmodSide event:  {
+  "type": "Flashlight",
+  "targetUuid": "STEAM_0:0:95049876",
+  "value": "false",
+  "uuid": "3e699671-f3d3-4418-9048-c247c8d86a08"
+}
+[18:20:53][Room-test]: Added chunk: [72%] (1056 blocks)
+[18:20:54][Room-test]: Added chunk: [73%] (1089 blocks)
+[18:20:55][Room-test]: Added chunk: [73%] (1089 blocks)
+[18:20:56][Room-test]: Added chunk: [73%] (1089 blocks)
+[18:20:57][Room-test]: Added chunk: [73%] (1188 blocks)
+[18:21:11][Room-test]: Removed MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -1077.4030246788718,
+  "y": -125.94994786580997,
+  "z": -1270.2222755418607,
+  "pitch": -32.895763,
+  "type": "Projectile",
+  "uuid": "5553aae4-69b5-40dc-9a47-5d65d9426d9d",
+  "class": "Arrow",
+  "yaw": 43.29995,
+  "isSitting": 0
+}
+[18:21:14][Room-test]: Removed MinecraftSide entity:  {
+  "name": "Arrow",
+  "x": -352.2481823481104,
+  "y": -382.0159609534454,
+  "z": -2341.392977445779,
+  "pitch": -31.906025,
+  "type": "Projectile",
+  "uuid": "828753f4-1c54-4f70-acda-41361d31e1ac",
+  "class": "Arrow",
+  "yaw": 65.48829,
+  "isSitting": 0
+}
+[18:21:39][Room-test]: Added chunk: [83%] (363 blocks)
+[18:21:40][Room-test]: Added chunk: [83%] (1089 blocks)
+[18:21:41][Room-test]: Added chunk: [84%] (1089 blocks)
+[18:21:42][Room-test]: Added chunk: [84%] (1056 blocks)
+[18:21:43][Room-test]: Added chunk: [84%] (1089 blocks)
+[18:21:44][Room-test]: Added chunk: [84%] (726 blocks)

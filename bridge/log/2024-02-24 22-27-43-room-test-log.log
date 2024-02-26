@@ -1,0 +1,219 @@
+[22:27:43][Room-test]: Initialized room with settings:
+[22:27:43][Room-test]: gmodUnitsPerBlock: 64
+[22:27:43][Room-test]: maxTPS: 1
+[22:27:43][Room-test]: allowedGeneratingMap: true
+[22:27:43][Room-test]: forcedGeneratingMap: true
+[22:27:43][Room-test]: To connect to the room type "/bridge start test" on your client.
+[22:27:49][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:27:49][Room-test]: gmod side connected to the room.
+[22:28:23][Room-test]: Added chunk: [4%] (6 blocks)
+[22:28:37][Room-test]: Added chunk: [6%] (17 blocks)
+[22:28:39][Room-test]: Added chunk: [6%] (33 blocks)
+[22:28:41][Room-test]: Added chunk: [7%] (89 blocks)
+[22:28:59][Room-test]: Added chunk: [9%] (99 blocks)
+[22:29:25][Room-test]: GmodSide disconnected: Timed out.
+[22:29:28][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:29:28][Room-test]: gmod side connected to the room.
+[22:29:46][Room-test]: Added chunk: [4%] (6 blocks)
+[22:29:53][Room-test]: Added chunk: [6%] (17 blocks)
+[22:29:54][Room-test]: Added chunk: [6%] (33 blocks)
+[22:29:56][Room-test]: Added chunk: [7%] (89 blocks)
+[22:30:05][Room-test]: Added chunk: [9%] (99 blocks)
+[22:30:12][Room-test]: Added chunk: [11%] (12 blocks)
+[22:30:14][Room-test]: Added chunk: [11%] (99 blocks)
+[22:30:22][Room-test]: Added chunk: [13%] (56 blocks)
+[22:30:23][Room-test]: Added chunk: [13%] (33 blocks)
+[22:30:24][Room-test]: Added chunk: [13%] (62 blocks)
+[22:31:06][Room-test]: Added chunk: [23%] (228 blocks)
+[22:31:07][Room-test]: Added chunk: [23%] (832 blocks)
+[22:31:08][Room-test]: Added chunk: [24%] (497 blocks)
+[22:31:09][Room-test]: Added chunk: [24%] (846 blocks)
+[22:31:10][Room-test]: Added chunk: [24%] (702 blocks)
+[22:31:11][Room-test]: Added chunk: [24%] (549 blocks)
+[22:31:15][Room-test]: Added chunk: [25%] (941 blocks)
+[22:31:16][Room-test]: Added chunk: [26%] (3253 blocks)
+[22:31:17][Room-test]: Added chunk: [26%] (2030 blocks)
+[22:31:18][Room-test]: Added chunk: [26%] (2598 blocks)
+[22:31:20][Room-test]: Added chunk: [26%] (2319 blocks)
+[22:31:21][Room-test]: Added chunk: [27%] (2876 blocks)
+[22:31:25][Room-test]: Added chunk: [28%] (2788 blocks)
+[22:31:26][Room-test]: Added chunk: [28%] (5333 blocks)
+[22:31:27][Room-test]: Added chunk: [28%] (2326 blocks)
+[22:31:28][Room-test]: Added chunk: [28%] (2089 blocks)
+[22:31:29][Room-test]: Added chunk: [29%] (633 blocks)
+[22:31:30][Room-test]: Added chunk: [29%] (1183 blocks)
+[22:31:34][Room-test]: Added chunk: [30%] (1453 blocks)
+[22:31:35][Room-test]: Added chunk: [30%] (2840 blocks)
+[22:31:36][Room-test]: Added chunk: [30%] (1212 blocks)
+[22:31:37][Room-test]: Added chunk: [31%] (2270 blocks)
+[22:31:38][Room-test]: Added chunk: [31%] (848 blocks)
+[22:31:39][Room-test]: Added chunk: [31%] (1597 blocks)
+[22:31:44][Room-test]: Added chunk: [32%] (627 blocks)
+[22:31:45][Room-test]: Added chunk: [32%] (2357 blocks)
+[22:31:46][Room-test]: Added chunk: [33%] (1800 blocks)
+[22:31:47][Room-test]: Added chunk: [33%] (2059 blocks)
+[22:31:48][Room-test]: Added chunk: [33%] (1780 blocks)
+[22:31:49][Room-test]: Added chunk: [33%] (1662 blocks)
+[22:32:31][Room-test]: Added chunk: [43%] (363 blocks)
+[22:32:32][Room-test]: Added chunk: [43%] (1089 blocks)
+[22:32:53][Room-test]: GmodSide disconnected: Timed out.
+[22:33:21][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:33:21][Room-test]: gmod side connected to the room.
+[22:33:38][Room-test]: Added chunk: [4%] (6 blocks)
+[22:33:46][Room-test]: Added chunk: [6%] (17 blocks)
+[22:33:47][Room-test]: Added chunk: [6%] (33 blocks)
+[22:33:48][Room-test]: Added chunk: [7%] (89 blocks)
+[22:33:57][Room-test]: Added chunk: [9%] (99 blocks)
+[22:34:05][Room-test]: Added chunk: [11%] (12 blocks)
+[22:34:07][Room-test]: Added chunk: [11%] (99 blocks)
+[22:34:14][Room-test]: Added chunk: [13%] (56 blocks)
+[22:34:15][Room-test]: Added chunk: [13%] (33 blocks)
+[22:34:16][Room-test]: Added chunk: [13%] (62 blocks)
+[22:34:58][Room-test]: Added chunk: [23%] (228 blocks)
+[22:34:59][Room-test]: Added chunk: [23%] (832 blocks)
+[22:35:00][Room-test]: Added chunk: [24%] (497 blocks)
+[22:35:01][Room-test]: Added chunk: [24%] (846 blocks)
+[22:35:02][Room-test]: Added chunk: [24%] (702 blocks)
+[22:35:03][Room-test]: Added chunk: [24%] (549 blocks)
+[22:35:08][Room-test]: Added chunk: [25%] (941 blocks)
+[22:35:09][Room-test]: Added chunk: [26%] (3253 blocks)
+[22:35:10][Room-test]: Added chunk: [26%] (2030 blocks)
+[22:35:11][Room-test]: Added chunk: [26%] (2598 blocks)
+[22:35:12][Room-test]: Added chunk: [26%] (2319 blocks)
+[22:35:13][Room-test]: Added chunk: [27%] (2876 blocks)
+[22:35:17][Room-test]: Added chunk: [28%] (2788 blocks)
+[22:35:18][Room-test]: Added chunk: [28%] (5333 blocks)
+[22:35:19][Room-test]: Added chunk: [28%] (2326 blocks)
+[22:35:20][Room-test]: Added chunk: [28%] (2089 blocks)
+[22:35:21][Room-test]: Added chunk: [29%] (633 blocks)
+[22:35:22][Room-test]: Added chunk: [29%] (1183 blocks)
+[22:35:27][Room-test]: Added chunk: [30%] (1453 blocks)
+[22:35:28][Room-test]: Added chunk: [30%] (2840 blocks)
+[22:35:58][Room-test]: GmodSide disconnected: Timed out.
+[22:36:01][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:36:01][Room-test]: gmod side connected to the room.
+[22:36:19][Room-test]: Added chunk: [4%] (6 blocks)
+[22:36:26][Room-test]: Added chunk: [6%] (17 blocks)
+[22:36:27][Room-test]: Added chunk: [6%] (33 blocks)
+[22:36:28][Room-test]: Added chunk: [7%] (89 blocks)
+[22:36:38][Room-test]: Added chunk: [9%] (99 blocks)
+[22:36:45][Room-test]: Added chunk: [11%] (12 blocks)
+[22:36:47][Room-test]: Added chunk: [11%] (99 blocks)
+[22:36:54][Room-test]: Added chunk: [13%] (56 blocks)
+[22:36:55][Room-test]: Added chunk: [13%] (33 blocks)
+[22:36:57][Room-test]: Added chunk: [13%] (62 blocks)
+[22:37:39][Room-test]: Added chunk: [23%] (228 blocks)
+[22:37:40][Room-test]: Added chunk: [23%] (832 blocks)
+[22:37:41][Room-test]: Added chunk: [24%] (497 blocks)
+[22:37:42][Room-test]: Added chunk: [24%] (846 blocks)
+[22:37:43][Room-test]: Added chunk: [24%] (702 blocks)
+[22:37:44][Room-test]: Added chunk: [24%] (549 blocks)
+[22:37:48][Room-test]: Added chunk: [25%] (941 blocks)
+[22:37:49][Room-test]: Added chunk: [26%] (3253 blocks)
+[22:37:50][Room-test]: Added chunk: [26%] (2030 blocks)
+[22:37:51][Room-test]: Added chunk: [26%] (2598 blocks)
+[22:37:52][Room-test]: Added chunk: [26%] (2319 blocks)
+[22:37:54][Room-test]: Added chunk: [27%] (2876 blocks)
+[22:37:58][Room-test]: Added chunk: [28%] (2788 blocks)
+[22:37:59][Room-test]: Added chunk: [28%] (5333 blocks)
+[22:38:00][Room-test]: Added chunk: [28%] (2326 blocks)
+[22:38:01][Room-test]: Added chunk: [28%] (2089 blocks)
+[22:38:02][Room-test]: Added chunk: [29%] (633 blocks)
+[22:38:03][Room-test]: Added chunk: [29%] (1183 blocks)
+[22:38:07][Room-test]: Added chunk: [30%] (1453 blocks)
+[22:38:08][Room-test]: Added chunk: [30%] (2840 blocks)
+[22:38:09][Room-test]: Added chunk: [30%] (1212 blocks)
+[22:38:11][Room-test]: Added chunk: [31%] (2270 blocks)
+[22:38:12][Room-test]: Added chunk: [31%] (848 blocks)
+[22:38:13][Room-test]: Added chunk: [31%] (1597 blocks)
+[22:38:17][Room-test]: Added chunk: [32%] (627 blocks)
+[22:38:18][Room-test]: Added chunk: [32%] (2357 blocks)
+[22:38:19][Room-test]: Added chunk: [33%] (1800 blocks)
+[22:38:20][Room-test]: Added chunk: [33%] (2059 blocks)
+[22:38:21][Room-test]: Added chunk: [33%] (1780 blocks)
+[22:38:22][Room-test]: Added chunk: [33%] (1662 blocks)
+[22:39:04][Room-test]: Added chunk: [43%] (363 blocks)
+[22:39:05][Room-test]: Added chunk: [43%] (1089 blocks)
+[22:39:06][Room-test]: Added chunk: [44%] (1089 blocks)
+[22:39:07][Room-test]: Added chunk: [44%] (1056 blocks)
+[22:39:08][Room-test]: Added chunk: [44%] (1089 blocks)
+[22:39:09][Room-test]: Added chunk: [44%] (726 blocks)
+[22:39:18][Room-test]: Added chunk: [46%] (941 blocks)
+[22:39:19][Room-test]: Added chunk: [47%] (1222 blocks)
+[22:39:23][Room-test]: Added chunk: [48%] (1118 blocks)
+[22:39:24][Room-test]: Added chunk: [48%] (2842 blocks)
+[22:39:33][Room-test]: Added chunk: [50%] (181 blocks)
+[22:39:34][Room-test]: Added chunk: [50%] (14 blocks)
+[22:39:38][Room-test]: Added chunk: [51%] (924 blocks)
+[22:39:42][Room-test]: Added chunk: [52%] (330 blocks)
+[22:39:43][Room-test]: Added chunk: [52%] (1575 blocks)
+[22:39:44][Room-test]: Added chunk: [53%] (1128 blocks)
+[22:39:45][Room-test]: Added chunk: [53%] (1089 blocks)
+[22:39:46][Room-test]: Added chunk: [53%] (1089 blocks)
+[22:39:47][Room-test]: Added chunk: [53%] (1188 blocks)
+[22:40:50][Room-test]: GmodSide disconnected: Timed out.
+[22:40:50][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:40:50][Room-test]: gmod side connected to the room.
+[22:41:34][Room-test]: GmodSide disconnected: Timed out.
+[22:41:35][Room-test]: Gmod side connected to the room. Materials:  {
+  "wood": 7,
+  "brick": 3,
+  "plaster": 4,
+  "building": 5,
+  "cliff": 8,
+  "grass": 2,
+  "concrete": 1,
+  "roof": 6,
+  "stone": 9
+}
+[22:41:35][Room-test]: gmod side connected to the room.
