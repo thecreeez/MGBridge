@@ -4,7 +4,7 @@
 1. Install Node JS to start bridge (server between servers)
 2. Install Spigot 1.18.2 server and put "GmodConnection-1.18.2 Spigot" to plugins folder.
 3. Configure plugin to connect minecraft to bridge (To check if minecraft connected to bridge you can open http://localhost:1820)
-4. Install zana4ka's addon to gmod (https://github.com/ScientificWays/gmod-minecraft-bridge) (Only on server side)
+4. Install zana4ka's addon to gmod ([ссылка](https://github.com/ScientificWays/gmod-minecraft-bridge/tree/2112c2835f70df0a4539f23f803e9514d206492f)) (Only on server side)
 5. Configure zana4ka's addon with commands (For details go to his page)
 
 ## Minecraft Side commands:
