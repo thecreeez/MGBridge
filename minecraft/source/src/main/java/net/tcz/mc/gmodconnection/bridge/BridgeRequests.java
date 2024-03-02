@@ -1,11 +1,8 @@
 package net.tcz.mc.gmodconnection.bridge;
 
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
 import net.tcz.mc.gmodconnection.BridgeScheduler;
 import net.tcz.mc.gmodconnection.Gmodconnection;
 import net.tcz.mc.gmodconnection.SchedulersController;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.json.simple.JSONObject;
@@ -17,7 +14,6 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -99,6 +95,23 @@ public class BridgeRequests {
         return result != null;
     }
 
+    public static String create(CommandSender sender, int tickRate, int gmodUnitsPerBlock) {
+        JSONObject data = new JSONObject();
+        data.put("tps", tickRate);
+        data.put("gmodUnitsPerBlock", gmodUnitsPerBlock);
+
+        JSONObject result = postRequest(urlAddress+"/create-room", data);
+        int resultCode = Integer.parseInt(result.get("code").toString());
+
+        if (resultCode == -1) {
+            sender.sendMessage("[Bridge] Unable to create room: "+result.get("message").toString());
+            return null;
+        }
+
+        JSONObject roomData = (JSONObject) result.get("data");
+        return (String) roomData.get("roomCode");
+    }
+
     private static JSONObject postRequest(String url, JSONObject data) {
         try {
             String JSONData = data.toString();
@@ -122,7 +135,8 @@ public class BridgeRequests {
 
             return (JSONObject) obj;
         } catch (IOException | ParseException e) {
-            e.printStackTrace();
+            if (BridgeController.sender != null)
+                BridgeController.sender.sendMessage("[Bridge] issue with request data: "+e.getMessage());
 
             return null;
         }

@@ -3,7 +3,7 @@ const Room = require("../classes/room/Room");
 const WebController = require("../classes/web/WebController");
 
 module.exports = {
-  type: WebController.GET,
+  type: WebController.POST,
   path: "/create-room",
 
   name: "RoomCreate",
@@ -65,7 +65,7 @@ module.exports = {
       return;
     }
 
-    if (Number(tps) > 256 || Number(tps) < 16) {
+    if (Number(gmodUnitsPerBlock) > 256 || Number(gmodUnitsPerBlock) < 16) {
       res.send({
         code: -1,
         message: `Wrong gmodUnitsPerBlock. need [16-256].`

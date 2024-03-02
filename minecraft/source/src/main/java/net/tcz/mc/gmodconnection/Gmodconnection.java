@@ -31,7 +31,7 @@ public final class Gmodconnection extends JavaPlugin {
             @Override
             public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
                 if (args.length < 1) {
-                    sender.sendMessage("Not enough args: bridge (start/stop/clear-map)");
+                    sender.sendMessage("Not enough args: bridge (start/stop/clear-map/create)");
                     return false;
                 }
 
@@ -53,6 +53,35 @@ public final class Gmodconnection extends JavaPlugin {
                         } else {
                             sender.sendMessage("[Bridge] You are not connected to any rooms.");
                         }
+                        break;
+                    }
+                    case "create": {
+                        int tickRate = 15;
+
+                        if (args.length > 1) {
+                            // Если неверный аргумент то игнорируем
+                            try {
+                                tickRate = Integer.parseInt(args[1]);
+                            } catch (Exception ignored) {}
+                        }
+
+                        int gmodUnitsPerBlock = 64;
+
+                        if (args.length > 2) {
+                            // Если неверный аргумент то игнорируем
+                            try {
+                                gmodUnitsPerBlock = Integer.parseInt(args[2]);
+                            } catch (Exception ignored) {}
+                        }
+
+                        String code = BridgeRequests.create(sender, tickRate, gmodUnitsPerBlock);
+
+                        if (code == null) {
+                            break;
+                        }
+
+                        sender.sendMessage("[Bridge] Room creating success. Code: "+code+". Autoconnecting...");
+                        SchedulersController.start(code, sender);
                         break;
                     }
                     case "clear-map": {

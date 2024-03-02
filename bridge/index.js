@@ -21,7 +21,7 @@ async function start() {
   }
 
   // Create room here
-  new Room(application.RoomController, { bDebug: true, maxTPS: 1, code: "test", gmodUnitsPerBlock: 64, forcedGenerateMap: true, allowedGeneratingMap: true, bPrivate: false });
+  new Room(application.RoomController, { bDebug: true, maxTPS: 10, code: "test", gmodUnitsPerBlock: 64, forcedGenerateMap: true, allowedGeneratingMap: true, bPrivate: false });
 }
 
 ['log', 'warn', 'error'].forEach((methodName) => {
