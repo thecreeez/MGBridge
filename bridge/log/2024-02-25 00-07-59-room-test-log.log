@@ -1,6 +1,0 @@
-[00:07:59][Room-test]: Initialized room with settings:
-[00:07:59][Room-test]: gmodUnitsPerBlock: 64
-[00:07:59][Room-test]: maxTPS: 1
-[00:07:59][Room-test]: allowedGeneratingMap: true
-[00:07:59][Room-test]: forcedGeneratingMap: true
-[00:07:59][Room-test]: To connect to the room type "/bridge start test" on your client.
