@@ -2,7 +2,7 @@
 # MGBridge
 
 Играй с друзьями в Minecraft и Gmod одновременно.
-* Спасибо [TheRealDGrew](dgrew.ru) за общий мост.
+* Спасибо [TheRealDGrew](https://dgrew.ru) за общий мост.
 
 ## Usage/Examples
 
