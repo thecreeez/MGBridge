@@ -28,7 +28,7 @@ class Room {
     // Max calls update to client
     maxTPS = 20, 
     // Allowing generate map from gmod (even if map exist on storage context)
-    allowedGeneratingMap = false,
+    allowedGeneratingMap = true,
     // is Room debug
     bDebug = false,
     // Code to connect to room
@@ -37,7 +37,7 @@ class Room {
     // Need to show room on site
     bPrivate = true, 
     // Force regenerate map from trace
-    forcedGenerateMap = false } = {}
+    forcedGenerateMap = true } = {}
   ) {
     this._roomController = roomController;
     this._gmodToken = false;
