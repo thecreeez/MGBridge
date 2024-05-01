@@ -47,14 +47,11 @@ local InputFilter = {
 	"Use"
 }
 
-hook.Add("PlayerInitialSpawn", "MinecraftPlayerInitialSpawn", function(InPlayer, bTransition)
-
+function MinecraftPlayerInitialSpawn_Implementation(InPlayer, bInTransition)
 	InitializeBridgePlayer(InPlayer)
-end)
+end
 
 function InitializeBridgePlayer(InPlayer)
-
-	if not MinecraftIsBridgeEnabled() then return end
 
 	if not InPlayer:IsBot() then
 		InPlayer.uuid = InPlayer:SteamID()
@@ -65,7 +62,7 @@ end
 
 hook.Add("PlayerSpawn", "MinecraftPlayerSpawn", function(InPlayer, bInTransition)
 
-	--MsgN("PlayerSpawn()")
+	--MsgN("MinecraftPlayerSpawn()")
 
 	--[[if not MinecraftIsBridgeEnabled() then
 
@@ -94,11 +91,9 @@ hook.Add("PlayerSpawn", "MinecraftPlayerSpawn", function(InPlayer, bInTransition
 	end
 end)
 
-hook.Add("PlayerLoadout", "MinecraftPlayerLoadout", function(InPlayer)
+function MinecraftPlayerLoadout_Implementation(InPlayer)
 
-	--MsgN("PlayerLoadout()")
-
-	if not MinecraftIsBridgeEnabled() then return end
+	--MsgN("MinecraftPlayerLoadout_Implementation()")
 
 	if not InPlayer:IsNextBot() then
 
@@ -113,17 +108,17 @@ hook.Add("PlayerLoadout", "MinecraftPlayerLoadout", function(InPlayer)
 		end
 		return true
 	end
-end)
+end
 
-hook.Add("AllowPlayerPickup", "MinecraftAllowPlayerPickup", function(InPlayer, InEntity)
+function MinecraftAllowPlayerPickup_Implementation(InPlayer, InEntity)
 
-	--MsgN("AllowPlayerPickup()")
+	--MsgN("MinecraftAllowPlayerPickup_Implementation()")
 
 	if string.StartWith(InEntity:GetClass(), "item_") and InEntity:CreatedByMap() then
 
 		return false
 	end
-end)
+end
 
 function MinecraftUpdateMove_Implementation(InPlayer, InMoveData, InCommandData)
 
@@ -161,11 +156,9 @@ function MinecraftCommand_Implementation(InPlayer, InCommandData)
 	end
 end
 
-hook.Add("AcceptInput", "MinecraftMapInput", function(InEntity, InInput, InActivator, InCaller, InValue)
+function MinecraftMapInput_Implementation(InEntity, InInput, InActivator, InCaller, InValue)
 
-	if not MinecraftIsBridgeEnabled() then return end
-	
-	--MsgN(InInput)
+	--MsgN(MinecraftMapInput_Implementation)
 
 	if table.HasValue(InputFilter, InInput) and InValue ~= "_bridge" then
 
@@ -189,35 +182,29 @@ hook.Add("AcceptInput", "MinecraftMapInput", function(InEntity, InInput, InActiv
 			value = tostring(InValue or "")
 		})
 	end
-end)
+end
 
-hook.Add("PhysgunPickup", "MinecraftPhysgunTargetPickup", function(InPlayer, InEntity)
+function MinecraftPhysgunTargetCanPickup_Implementation(InPlayer, InEntity)
 
-	--MsgN("PhysgunPickup")
+	--MsgN("MinecraftPhysgunTargetCanPickup_Implementation")
 
 	return InEntity:GetClass() ~= "player" and not InEntity.bMinecraftBlock
-end)
+end
 
-hook.Add("OnPhysgunPickup", "MinecraftPhysgunTargetPickup", function(InPlayer, InEntity)
-
-	if not MinecraftIsBridgeEnabled() then return end
+function MinecraftPhysgunTargetPickup_Implementation(InPlayer, InEntity)
 
 	if InEntity.uuid then
 		InPlayer.Target = InEntity.uuid
 	end
-end)
+end
 
-hook.Add("PhysgunDrop", "MinecraftPhysgunTargetRelease", function(InPlayer, InEntity)
-
-	if not MinecraftIsBridgeEnabled() then return end
+function MinecraftPhysgunTargetRelease_Implementation(InPlayer, InEntity)
 
 	InPlayer.Target = ""
-end)
+end
 
-hook.Add("OnPhysgunFreeze", "MinecraftPhysgunFreeze", function(InWeapon, InPhysObj, InEntity, InPlayer)
+function MinecraftPhysgunFreeze_Implementation(InWeapon, InPhysObj, InEntity, InPlayer)
 
-	if not MinecraftIsBridgeEnabled() then return end
-	
 	local WeaponColor = InPlayer:GetWeaponColor()
 
 	MinecraftAddEventToList({
@@ -227,7 +214,7 @@ hook.Add("OnPhysgunFreeze", "MinecraftPhysgunFreeze", function(InWeapon, InPhysO
 		hand_color_g = math.Round(WeaponColor.y, 2),
 		hand_color_b = math.Round(WeaponColor.z, 2)
 	})
-end)
+end
 
 hook.Add("PlayerSay", "MinecraftChatEvent", function(InPlayer, InText, bTeamChat)
 
@@ -271,12 +258,10 @@ hook.Add("PlayerSay", "MinecraftChatEvent", function(InPlayer, InText, bTeamChat
 	})
 end)
 
-hook.Add("PlayerSwitchFlashlight", "MinecraftSwitchFlashlight", function(InPlayer, bInEnabled)
+function MinecraftSwitchFlashlight_Implementation(InPlayer, bInEnabled)
 
-	--MsgN("PlayerSwitchFlashlight")
+	--MsgN("MinecraftSwitchFlashlight_Implementation")
 
-	if not MinecraftIsBridgeEnabled() then return end
-	
 	if InPlayer.bMinecraftEntity then return end
 
 	MinecraftAddEventToList({
@@ -284,4 +269,4 @@ hook.Add("PlayerSwitchFlashlight", "MinecraftSwitchFlashlight", function(InPlaye
 		targetUuid = InPlayer.uuid,
 		value = tostring(bInEnabled)
 	})
-end)
+end

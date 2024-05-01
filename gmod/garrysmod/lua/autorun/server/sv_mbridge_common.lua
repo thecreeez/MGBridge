@@ -21,7 +21,7 @@ function MinecraftSetBridgeEnabled(bInEnabled)
 	bMinecraftBridgeEnabled = bInEnabled
 end
 
-local MinecraftBridgeIP = "51.68.67.53"
+local MinecraftBridgeIP = "26.221.65.181"
 local MinecraftBridgePort = "1820"
 local MinecraftBridgeRoomCode = -1
 
@@ -80,6 +80,12 @@ end
 function MinecraftStartBridge(InRoomCode)
 
 	if MinecraftIsBridgeEnabled() then return end
+
+	if InRoomCode == nil or InRoomCode == "" then
+		PrintMessage(HUD_PRINTTALK, "Empty room code!")
+		return
+	end
+
 	MinecraftClearSendEventList()
 	
 	MinecraftBridgeRoomCode = InRoomCode
@@ -102,11 +108,27 @@ function MinecraftStopBridge()
 
 	hook.Remove("SetupMove", "MinecraftUpdateMove")
 	hook.Remove("StartCommand", "MinecraftCommand")
+	hook.Remove("OnEntityCreated", "MinecraftEntityCreated")
+	hook.Remove("EntityRemoved", "MinecraftEntityRemoved")
+	hook.Remove("PropBreak", "MinecraftPropBreak")
+	hook.Remove("EntityTakeDamage", "MinecraftTakeDamage")
+	hook.Remove("PlayerInitialSpawn", "MinecraftPlayerInitialSpawn")
+	hook.Remove("PlayerLoadout", "MinecraftPlayerLoadout")
+	hook.Remove("AllowPlayerPickup", "MinecraftAllowPlayerPickup")
+	hook.Remove("AcceptInput", "MinecraftMapInput")
+	hook.Remove("PhysgunPickup", "MinecraftPhysgunTargetCanPickup")
+	hook.Remove("OnPhysgunPickup", "MinecraftPhysgunTargetPickup")
+	hook.Remove("PhysgunDrop", "MinecraftPhysgunTargetRelease")
+	hook.Remove("OnPhysgunFreeze", "MinecraftPhysgunFreeze")
+	hook.Remove("PlayerSwitchFlashlight", "MinecraftSwitchFlashlight")
 
 	PrintMessage(HUD_PRINTTALK, "Minecraft bridge disabled!")
 end
 
 function MinecraftHandshake()
+
+	PrintMessage(HUD_PRINTTALK, "Preparing handshake...")
+
 	local OutTable = {
 		type = "gmod",
 		OffsetHeight = GetGlobalOffsetZ(),
@@ -131,49 +153,65 @@ function MinecraftOnHandshakeSuccess(InCode, InBody, InHeaders)
 
 	MsgN(Format("MinecraftOnHandshakeSuccess() body: %s", InBody))
 
-	local SampleTable = util.JSONToTable(InBody) or {}
+	local ReceviedTable = util.JSONToTable(InBody) or {}
 
-	if SampleTable.code == -1 then
-		MsgN(Format("MinecraftOnHandshakeSuccess() Error: %s", SampleTable.message))
+	if ReceviedTable.code == -1 then
+		PrintMessage(HUD_PRINTTALK, "Handshake error! Check console.")
+		MsgN(Format("MinecraftOnHandshakeSuccess() Error: %s", ReceviedTable.message))
 		return
 	end
 
-	local SampleToken = SampleTable.data.token
-	local SampleSettings = SampleTable.data.settings
+	PrintMessage(HUD_PRINTTALK, "Handshake success!")
 
-	if SampleToken ~= nil then
-		MinecraftBridgeToken = SampleToken
+	local ReceivedToken = ReceviedTable.data.token
+	local ReceivedSettings = ReceviedTable.data.settings
+
+	if ReceivedToken ~= nil then
+		MinecraftBridgeToken = ReceivedToken
 	end
 
-	--PrintTable(SampleTable)
+	--PrintTable(ReceviedTable)
 
-	if SampleSettings ~= nil then
-		if SampleSettings.gmodUnitsPerBlock ~= nil and isnumber(SampleSettings.gmodUnitsPerBlock) then
-			MinecraftSetBlockSize(SampleSettings.gmodUnitsPerBlock)
+	if ReceivedSettings ~= nil then
+		if ReceivedSettings.gmodUnitsPerBlock ~= nil and isnumber(ReceivedSettings.gmodUnitsPerBlock) then
+			MinecraftSetBlockSize(ReceivedSettings.gmodUnitsPerBlock)
 		else
 			MinecraftSetBlockSize(64.0)
 		end
 
-		if SampleSettings.allowedGeneratingMap ~= nil then
-			MinecraftSetShouldScanMap(SampleSettings.allowedGeneratingMap == true)
+		if ReceivedSettings.allowedGeneratingMap ~= nil then
+			MinecraftSetShouldScanMap(ReceivedSettings.allowedGeneratingMap == true)
 		end
 	else
 		MinecraftSetBlockSize(64.0)
 	end
-	--MinecraftInitStaticEntities()
 
-	bMinecraftShouldScanMap = (SampleSettings.forcedGenerateMap == 1)
+	--bMinecraftShouldScanMap = (ReceivedSettings.forcedGenerateMap == 1)
 	MinecraftSetBridgeEnabled(true)
 
 	for SampleIndex, SamplePlayer in ipairs(player.GetAll()) do
 		InitializeBridgePlayer(SamplePlayer)
 		SamplePlayer:Spawn()
 	end
+	MinecraftInitCurrentEntities()
 
 	hook.Add("SetupMove", "MinecraftUpdateMove", MinecraftUpdateMove_Implementation)
 	hook.Add("StartCommand", "MinecraftCommand", MinecraftCommand_Implementation)
+	hook.Add("OnEntityCreated", "MinecraftEntityCreated", MinecraftEntityCreated_Implementation)
+	hook.Add("EntityRemoved", "MinecraftEntityRemoved", MinecraftEntityRemoved_Implementation)
+	hook.Add("PropBreak", "MinecraftPropBreak", MinecraftPropBreak_Implementation)
+	hook.Add("EntityTakeDamage", "MinecraftTakeDamage", MinecraftTakeDamage_Implementation)
+	hook.Add("PlayerInitialSpawn", "MinecraftPlayerInitialSpawn", MinecraftPlayerInitialSpawn_Implementation)
+	hook.Add("PlayerLoadout", "MinecraftPlayerLoadout", MinecraftPlayerLoadout_Implementation)
+	hook.Add("AllowPlayerPickup", "MinecraftAllowPlayerPickup", MinecraftAllowPlayerPickup_Implementation)
+	hook.Add("AcceptInput", "MinecraftMapInput", MinecraftMapInput_Implementation)
+	hook.Add("PhysgunPickup", "MinecraftPhysgunTargetCanPickup", MinecraftPhysgunTargetCanPickup_Implementation)
+	hook.Add("OnPhysgunPickup", "MinecraftPhysgunTargetPickup", MinecraftPhysgunTargetPickup_Implementation)
+	hook.Add("PhysgunDrop", "MinecraftPhysgunTargetRelease", MinecraftPhysgunTargetRelease_Implementation)
+	hook.Add("OnPhysgunFreeze", "MinecraftPhysgunFreeze", MinecraftPhysgunFreeze_Implementation)
+	hook.Add("PlayerSwitchFlashlight", "MinecraftSwitchFlashlight", MinecraftSwitchFlashlight_Implementation)
 
-	MinecraftBridgeMaxTPS = tonumber(SampleTable.maxTPS) or 10.0
+	MinecraftBridgeMaxTPS = tonumber(ReceviedTable.maxTPS) or 10.0
 	bMinecraftUpdateScanHandled = true
 	timer.Create("MinecraftUpdate", 1.0 / MinecraftBridgeMaxTPS, 0, MinecraftUpdate)
 
@@ -240,10 +278,10 @@ function MinecraftOnUpdateSuccess(InCode, InBody, InHeaders)
 	--MsgN(Format("MinecraftOnUpdateSuccess() body: %s", InBody))
 	--MsgN("MinecraftOnUpdateSuccess()")
 
-	local SampleTable = util.JSONToTable(InBody) or {}
+	local ReceviedTable = util.JSONToTable(InBody) or {}
 
-	if SampleTable.code == -1 then
-		MsgN(Format("MinecraftOnUpdateSuccess() Error: %s", SampleTable.message))
+	if ReceviedTable.code == -1 then
+		MsgN(Format("MinecraftOnUpdateSuccess() Error: %s", ReceviedTable.message))
 		
 		if not bSlowerUpdates then
 			timer.Adjust("MinecraftUpdate", 1.0 / MinecraftBridgeMaxTPS * 5.0)
@@ -257,7 +295,7 @@ function MinecraftOnUpdateSuccess(InCode, InBody, InHeaders)
 		bSlowerUpdates = false
 	end
 
-	MinecraftReceiveEntityUpdateData(SampleTable.data)
+	MinecraftReceiveEntityUpdateData(ReceviedTable.data)
 
 	if MinecraftIsMapScanInProgress() then		
 		bMinecraftUpdateScanHandled = true
