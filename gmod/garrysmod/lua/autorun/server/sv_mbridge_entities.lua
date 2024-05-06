@@ -74,6 +74,13 @@ function SetGlobalOffsetZ(InOffset)
 	GlobalOffsetZ = InOffset
 end
 
+function MinecraftInitCurrentEntities()
+
+	for SampleIndex, SampleEntity in ipairs(ents.GetAll()) do
+		MinecraftEntityCreated_Implementation(SampleEntity)
+	end
+end
+
 function MinecraftCreateEntity(InEntityData)
 
 	--MsgN("MinecraftCreateEntity()")
@@ -519,29 +526,31 @@ function MinecraftDrawWaterText(bDepth, bSkybox)
 	
 end
 
-hook.Add("OnEntityCreated", "MinecraftEntityCreated", function(InEntity)
+function MinecraftEntityCreated_Implementation(InEntity)
+
+	--MsgN("MinecraftEntityCreated_Implementation()")
 
 	if IsValid(InEntity) then
 		if not InEntity:IsPlayer() then
 
 			InEntity.uuid = tostring(InEntity:EntIndex())
 
-			if InEntity:GetName() == "" then
-				InEntity:SetName(InEntity.uuid)
-			end
+			--if InEntity:GetName() == "" then
+			--	InEntity:SetName(InEntity.uuid)
+			--end
 		end
 
 		if InEntity:IsNPC() then
 			RegisterUUIDEntity(InEntity.uuid, InEntity)
 		end
 	end
-end)
+end
 
-hook.Add("EntityRemoved", "MinecraftEntityRemoved", function(InEntity)
+hook.Add("OnEntityCreated", "MinecraftEntityCreated", MinecraftEntityCreated_Implementation)
 
-	if not MinecraftIsBridgeEnabled() then return end
+function MinecraftEntityRemoved_Implementation(InEntity)
 
-	--MsgN("EntityRemoved()")
+	--MsgN("MinecraftEntityRemoved_Implementation()")
 
 	if IsValid(InEntity) then
 		if InEntity.bMinecraftBlock then
@@ -561,20 +570,18 @@ hook.Add("EntityRemoved", "MinecraftEntityRemoved", function(InEntity)
 			return
 		end
 	end
-end)
+end
 
-hook.Add("PropBreak", "MinecraftPropBreak", function(InAttacker, InProp)
+function MinecraftPropBreak_Implementation(InAttacker, InProp)
 
-	if not MinecraftIsBridgeEnabled() then return end
-
-	--MsgN("PropBreak()")
+	--MsgN("MinecraftPropBreak_Implementation()")
 
 	if IsValid(InProp) then
 		if MinecraftExplosiveModelList[InProp:GetModel()] then
 			HandleMinecraftEntityExplosionEvent(InProp)
 		end
 	end
-end)
+end
 
 function HandleMinecraftEntityExplosionEvent(InEntity)
 
@@ -588,13 +595,14 @@ function HandleMinecraftEntityExplosionEvent(InEntity)
 	})
 end
 
-hook.Add("EntityTakeDamage", "MinecraftTakeDamage", function(InEntity, InDamageInfo)
+function MinecraftTakeDamage_Implementation(InEntity, InDamageInfo)
 
-	--MsgN("EntityTakeDamage")
+	--MsgN("MinecraftTakeDamage_Implementation")
 
-	if not MinecraftIsBridgeEnabled() then return end	
 	if InDamageInfo:GetDamageType() == 228 then return end
+
 	if InEntity.bMinecraftBlock then return end
+	
 	if InEntity:IsPlayer() or InEntity:IsNPC() then
 		MinecraftAddEventToList({
 			type = "Damage",
@@ -606,4 +614,4 @@ hook.Add("EntityTakeDamage", "MinecraftTakeDamage", function(InEntity, InDamageI
 		--PrintTable(MinecraftSendEventList)
 		return InEntity.bMinecraftEntity
 	end
-end)
+end
