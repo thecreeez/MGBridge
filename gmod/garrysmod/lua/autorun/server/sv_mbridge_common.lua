@@ -21,7 +21,7 @@ function MinecraftSetBridgeEnabled(bInEnabled)
 	bMinecraftBridgeEnabled = bInEnabled
 end
 
-local MinecraftBridgeIP = "26.221.65.181"
+local MinecraftBridgeIP = "193.70.96.214"
 local MinecraftBridgePort = "1820"
 local MinecraftBridgeRoomCode = -1
 
